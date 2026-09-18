@@ -17,6 +17,9 @@
   <!-- css -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- ファーストビュー背景を先読み（表示開始を早める） -->
+  <link rel="preload" as="image" href="images/family_1.jpg" fetchpriority="high">
 </head>
 
 <body>
@@ -86,7 +89,7 @@
         <ul class="sinryou-box">
           <li class="sinryou-wrap">
             <div class="sinryou-photo">
-              <img src="images/clinic_doctor_female.jpeg" alt="一般皮膚科の診療風景">
+              <img src="images/clinic_doctor_female.jpeg" alt="一般皮膚科の診療風景" width="600" height="400" loading="lazy" decoding="async">
             </div>
             <div class="sinryou-card">
               <h3 class="sinryou-name">一般皮膚科</h3>
@@ -100,7 +103,7 @@
           </li>
           <li class="sinryou-wrap">
             <div class="sinryou-photo">
-              <img src="images/kids_skin_clinic.jpeg" alt="小児皮膚科の診療風景">
+              <img src="images/kids_skin_clinic.jpeg" alt="小児皮膚科の診療風景" width="600" height="600" loading="lazy" decoding="async">
             </div>
             <div class="sinryou-card">
               <h3 class="sinryou-name">小児皮膚科</h3>
@@ -114,7 +117,7 @@
           </li>
           <li class="sinryou-wrap">
             <div class="sinryou-photo">
-              <img src="images/beauty.jpeg" alt="美容皮膚科の診療風景">
+              <img src="images/beauty.jpeg" alt="美容皮膚科の診療風景" width="600" height="400" loading="lazy" decoding="async">
             </div>
             <div class="sinryou-card">
               <h3 class="sinryou-name">美容皮膚科</h3>
@@ -134,7 +137,7 @@
         <span class="title-en">About Us</span>
         <ul class="feature-timeline">
           <li class="feature-item">
-            <div class="feature-image"><img src="images/work.png" alt="女性が仕事終わりに予約している様子"></div>
+            <div class="feature-image"><img src="images/work.jpg" alt="女性が仕事終わりに予約している様子" width="1040" height="1040" loading="lazy" decoding="async"></div>
             <div class="feature-content">
               <span class="feature-number">01</span>
               <h3 class="feature-heading">仕事帰り・学校帰りも通いやすい</h3>
@@ -142,7 +145,7 @@
             </div>
           </li>
           <li class="feature-item">
-            <div class="feature-image"><img src="images/medical_2.jpg" alt="押し売りのない丁寧な治療提案をする様子"></div>
+            <div class="feature-image"><img src="images/medical_2.jpg" alt="押し売りのない丁寧な治療提案をする様子" width="1040" height="1040" loading="lazy" decoding="async"></div>
             <div class="feature-content">
               <span class="feature-number">02</span>
               <h3 class="feature-heading">押し売りのない丁寧な治療提案</h3>
@@ -150,7 +153,7 @@
             </div>
           </li>
           <li class="feature-item">
-            <div class="feature-image"><img src="images/family_3.jpg" alt="大人まで家族で通っている様子"></div>
+            <div class="feature-image"><img src="images/family_3.jpg" alt="大人まで家族で通っている様子" width="971" height="971" loading="lazy" decoding="async"></div>
             <div class="feature-content">
               <span class="feature-number">03</span>
               <h3 class="feature-heading">地域に根ざした家族のクリニック</h3>
@@ -158,7 +161,7 @@
             </div>
           </li>
           <li class="feature-item">
-            <div class="feature-image"><img src="images/reservation.jpg" alt="電話が苦手な人、忙しい人も24時間簡単に予約できる様子"></div>
+            <div class="feature-image"><img src="images/reservation.jpg" alt="電話が苦手な人、忙しい人も24時間簡単に予約できる様子" width="360" height="240" loading="lazy" decoding="async"></div>
             <div class="feature-content">
               <span class="feature-number">04</span>
               <h3 class="feature-heading">24時間WEB予約に対応</h3>
@@ -166,7 +169,7 @@
             </div>
           </li>
           <li class="feature-item">
-            <div class="feature-image"><img src="images/female doctor.jpg" alt="気軽に肌の悩みを相談している様子"></div>
+            <div class="feature-image"><img src="images/female doctor.jpg" alt="気軽に肌の悩みを相談している様子" width="1040" height="1039" loading="lazy" decoding="async"></div>
             <div class="feature-content">
               <span class="feature-number">05</span>
               <h3 class="feature-heading">話しやすい女性医師が診療</h3>
@@ -174,7 +177,7 @@
             </div>
           </li>
           <li class="feature-item">
-            <div class="feature-image"><img src="images/beauty consultation.jpg" alt="美容の悩みを相談している様子"></div>
+            <div class="feature-image"><img src="images/beauty consultation.jpg" alt="美容の悩みを相談している様子" width="1040" height="1039" loading="lazy" decoding="async"></div>
             <div class="feature-content">
               <span class="feature-number">06</span>
               <h3 class="feature-heading">気軽に相談できる肌のかかりつけ医</h3>
@@ -188,27 +191,27 @@
         <!-- <p><img src="" alt=""></p> -->
         <div class="img">
           <div class="icon-list">
-            <div class="icon"><img src="images/logo2.png" alt="マスクのロゴ"></div>
+            <div class="icon"><img src="images/logo2.png" alt="マスクのロゴ" width="113" height="110" loading="lazy" decoding="async"></div>
             <p class="icon">マスク着用</p>
           </div>
           <div class="icon-list">
-            <div class="icon"><img src="images/logo3.png" alt="手洗い・消毒のロゴ"></div>
+            <div class="icon"><img src="images/logo3.png" alt="手洗い・消毒のロゴ" width="110" height="110" loading="lazy" decoding="async"></div>
             <p class="icon">手洗い・消毒</p>
           </div>
           <div class="icon-list">
-            <div class="icon"><img src="images/logo4.png" alt="手洗い・消毒のロゴ"></div>
+            <div class="icon"><img src="images/logo4.png" alt="手洗い・消毒のロゴ" width="110" height="110" loading="lazy" decoding="async"></div>
             <p class="icon">健康管理</p>
           </div>
           <div class="icon-list">
-            <div class="icon"><img src="images/logo5.png" alt="手洗い・消毒のロゴ"></div>
+            <div class="icon"><img src="images/logo5.png" alt="手洗い・消毒のロゴ" width="110" height="110" loading="lazy" decoding="async"></div>
             <p class="icon">ソーシャル<span class="br">ディスタンス</span></p>
           </div>
           <div class="icon-list">
-            <div class="icon"><img src="images/logo6.png" alt="手洗い・消毒のロゴ"></div>
+            <div class="icon"><img src="images/logo6.png" alt="手洗い・消毒のロゴ" width="110" height="110" loading="lazy" decoding="async"></div>
             <p class="icon">院内消毒</p>
           </div>
           <div class="icon-list">
-            <div class="icon"><img src="images/logo8.png" alt="手洗い・消毒のロゴ"></div>
+            <div class="icon"><img src="images/logo8.png" alt="手洗い・消毒のロゴ" width="110" height="110" loading="lazy" decoding="async"></div>
             <p class="icon">NO密</p>
           </div>
         </div>
@@ -224,7 +227,7 @@
         </section>
         <div class="introduction_g">
           <div class="director-img">
-            <figure><img src="images/doctor_shimizu.jpeg" width="300" height="450">
+            <figure><img src="images/doctor_shimizu.jpeg" width="1100" height="733" alt="院長 清水" loading="lazy" decoding="async">
             </figure>
             <div class="career">
               <section class="career-text">
