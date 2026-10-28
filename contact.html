@@ -17,6 +17,9 @@
   <!-- css -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- js -->
+  <script src="js/main.js" defer></script>
 </head>
 
 <body class="contact">
@@ -32,12 +35,14 @@
           <span>〒167-0051 東京都杉並区荻窪4丁目12-8 コスモ荻窪ビル2階</span>
         </address>
         <ul class="sub-menu">
-          <li><a href="#x"><img src="images/tel.svg" alt="" class="tel-icon"> 03-6915-2412</a></li>
+          <li><a href="tel:0369152412" class="tel-link"><img src="images/tel.svg" alt="電話する" class="tel-icon"> <span class="tel-number">03-6915-2412</span></a></li>
           <li class="web-reserve"><a href="./contact.html">WEB予約</a></li>
         </ul>
-
+        <button type="button" class="menu-toggle" aria-controls="global-nav" aria-expanded="false" aria-label="メニューを開く">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <nav>
+      <nav id="global-nav">
         <ul class="global-menu">
           <li><a href="./index.html">ホーム</a></li>
           <li><a href="#x">当院について</a></li>
